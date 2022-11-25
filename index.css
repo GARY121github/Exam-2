@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=League+Spartan:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Spartan' , sans-serif;
+    /* background-color: red; */
+}
+
+/* HEADER  */
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: black;
+    box-shadow: 0 5px 15px rgb(0 , 0 , 0 , 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding:0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #1DB954;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* FIRST PAGE */
+button.normal{
+    font-size : 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    transition: 0.2s;
+}
+
+#first-page{
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    
+}
+
+#first-page > img{
+    width: 400px;
+    background-color: white;
+    padding: 10px;
+    padding-top: 30px;
+    margin: 15px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content > h4{
+    color: white;
+    flex: no-flex;
+    font-size: 50px;
+}
+
+.why{
+    align-items: center;
+}
+.second-page{
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: center; */
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item > img {
+
+    width: 100px;
+}
